@@ -1,0 +1,116 @@
+*{
+    background-color: rgb(179, 171, 172);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color:#000000;
+    font: 16px sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.618em;
+}
+
+.container {
+    background-color: rgb(179, 171, 172);
+    box-shadow: 7px 5px 32px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 5px 32px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 5px 32px -6px rgba(0,0,0,0.75);
+    margin: 2rem auto;
+    max-width: 70rem;
+    width: 90%;
+    
+}
+
+.hero {
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+.list__of__reviews {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.link__to__review {
+    margin-left: 1rem;
+}
+
+.review__category__ep__number{
+    margin-left: 2rem;
+}
+
+.h1 {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.episode__image {
+    max-height: 400px;
+    max-width: 400px;
+    margin: 1rem;
+}
+
+.episode__title__img {
+    max-height: 200px;
+    max-width: 200px;
+    margin-left: 5px;
+}
+
+.ep__review {
+    margin-top: 2rem;
+}
+
+.synopsis {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+
+.footer {
+    margin-top: 2em;
+    text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+    .header {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .list__of__reviews {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .footer {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+}
