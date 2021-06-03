@@ -19,10 +19,7 @@
         <main class="main">
             <section class="list__of__reviews">
                 <article th:each="review: ${reviewsModel}">
-                    <a th:href="@{/review(id=${review.id})}" th:text="${review.title}" class="link__to__review"></a>
-                    <figure>
-                        <img th:src="${review.imageURL2}" alt="episodeTitle" class="episode__title__img">
-                    </figure>                    
+                    <a th:href="@{/review(id=${review.id})}"><img th:src="${review.imageURL2}" alt="episodeTitle" class="episode__title__img"></a>     
                 </article>
             </section>
         </main>

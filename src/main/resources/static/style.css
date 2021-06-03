@@ -1,5 +1,5 @@
 *{
-    background-color: rgb(179, 171, 172);
+    background-color: rgb(187, 167, 141);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -13,12 +13,12 @@ html {
 }
 
 .container {
-    background-color: rgb(179, 171, 172);
+    background-color: rgb(187, 167, 141);
     box-shadow: 7px 5px 32px -6px rgba(0,0,0,0.75);
     -webkit-box-shadow: 7px 5px 32px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: 7px 5px 32px -6px rgba(0,0,0,0.75);
     margin: 2rem auto;
-    max-width: 70rem;
+    max-width: 60rem;
     width: 90%;
     
 }
@@ -42,11 +42,8 @@ html {
 
 .list__of__reviews {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.link__to__review {
-    margin-left: 1rem;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
 }
 
 .review__category__ep__number{
@@ -65,8 +62,8 @@ html {
 }
 
 .episode__title__img {
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 300px;
+    max-width: auto;
     margin-left: 5px;
 }
 
@@ -85,7 +82,7 @@ html {
     text-align: center;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1000px) {
     .header {
         align-items: center;
         display: flex;
@@ -97,7 +94,22 @@ html {
         align-items: center;
         display: flex;
         flex-direction: column;
-        margin: 0;
+        margin: 2rem;
+    }
+
+    .main {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+    
+    h1 {
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        margin-bottom: 1rem;
     }
 
     .list__of__reviews {
@@ -105,6 +117,20 @@ html {
         display: flex;
         flex-direction: column;
         margin: 0;
+    }
+
+    .episode__image {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .episode__title__img {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
     }
 
     .footer {
