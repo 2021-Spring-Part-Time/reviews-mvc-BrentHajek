@@ -58,8 +58,8 @@ public class ReviewControllerMVCTest {
 
     @Test
     public void shouldReturnNotFoundForRequestNotInModel() throws Exception {
-        Long courseTwoId = 2L;
-        when(reviewRepo.findOne(courseTwoId)).thenReturn(reviewTwo);
+        Long reviewTwoId = 2L;
+        when(reviewRepo.findOne(reviewTwoId)).thenReturn(reviewTwo);
         mockMvc.perform(get("/review?id=3")).andExpect(status().isNotFound());
     }
 
