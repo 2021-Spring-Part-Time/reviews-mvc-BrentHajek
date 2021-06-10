@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html">
+    <link rel="stylesheet" href="style.css">
+    <title>Reviews of Star Trek TOS Episodes</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class=banner>
+            <img src="images\Banner.png" alt="starTrekBanner" class="hero">
+        </div>
+        <header class="header">
+            <h1 class="h1">All Available Episode Reviews</h1>
+        </header>
+
+        <main class="main">
+            <section class="list__of__reviews">
+                <article th:each="review: ${reviewsModel}">
+                    <a th:href="@{/review(id=${review.id})}"><img th:src="${review.imageURL2}" alt="episodeTitle" class="episode__title__img"></a>     
+                </article>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <small>@copy wcci 2021</small>
+        </footer>
+    </div>
+</body>
+
+</html>

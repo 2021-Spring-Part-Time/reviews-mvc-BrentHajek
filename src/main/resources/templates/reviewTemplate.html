@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" http-equiv="Content-Type" content="text/html">
+    <link rel="stylesheet" href="style.css">
+    <title>Episode Review</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class=banner>
+            <img src="images\Banner.png" alt="starTrekBanner" class="hero">
+        </div>
+        <header class="header">
+            <h1 th:text="${reviewModel.title}" class="h1"></h1>            
+        </header>
+
+        <main class="main">
+            <ul class="review__category__ep__number">
+                <li th:text="${reviewModel.category}"></li>
+                <li th:text="${reviewModel.episodeNumber}"></li>
+            </ul>
+            <h2 class="ep__review">Review</h2>
+            <p th:text="${reviewModel.content}"></p>
+            <img th:src="${reviewModel.imageURL}" alt="episodeScreenshot" class="episode__image">
+            <article class="synopsis">
+                <h3>Episode Synopsis</h3>
+                <p th:text="${reviewModel.synopsis}"></p>
+            </article>
+
+            <p><a href="/reviews">Return to All Reviews</a></p>
+        </main>
+
+        <footer class="footer">
+            <small>@copy wcci 2021</small>
+        </footer>
+    </div>
+</body>
+
+</html>
